@@ -1,0 +1,221 @@
+{
+  "hub": {
+    "name": "Millbrook",
+    "label": "Millbrook, Ontario — PTTF headquarters",
+    "lat": 44.15,
+    "lng": -78.448
+  },
+  "destination": {
+    "name": "Ukraine",
+    "label": "Ukraine — to the Defenders at the front",
+    "lat": 50.4501,
+    "lng": 30.5234
+  },
+  "participants": [
+    {
+      "id": "HelenA",
+      "name": "Helen A.",
+      "media": { "type": "video", "src": "public/media/HelenA.mp4" },
+      "city": "Millbrook (ON)",
+      "country": "Canada",
+      "lat": 44.15,
+      "lng": -78.448,
+      "circle": "Helen",
+      "bio": "A founding volunteer in Millbrook, where every postcard in the project passes through her hands before crossing the Atlantic.",
+      "postcards": ["public/postcards/kamloops-card-1.jpg", "public/postcards/teddy-bear-cards.jpg"]
+    },
+    {
+      "id": "HelenB",
+      "name": "Helen B.",
+      "media": { "type": "video", "src": "public/media/HelenB.mp4" },
+      "city": "Montreal (QC)",
+      "country": "Canada",
+      "lat": 45.5019,
+      "lng": -73.5674,
+      "circle": "Helen",
+      "bio": "Hosts postcard-writing meetups in Montreal cafés, gathering postcrossers and newcomers around one table.",
+      "postcards": ["public/postcards/kamloops-card-2.jpg"]
+    },
+    {
+      "id": "HelenC",
+      "name": "Helen C.",
+      "media": { "type": "video", "src": "public/media/HelenC.mp4" },
+      "city": "Victoria (BC)",
+      "country": "Canada",
+      "lat": 48.4284,
+      "lng": -123.3656,
+      "circle": "Helen",
+      "bio": "Writes from Vancouver Island, tucking Pacific wildflowers and watercolour skies into every card.",
+      "postcards": ["public/postcards/bethany-hummingbirds.jpg"]
+    },
+    {
+      "id": "HelenD",
+      "name": "Helen D.",
+      "media": { "type": "video", "src": "public/media/HelenD.mp4" },
+      "city": "Los Angeles (CA)",
+      "country": "United States",
+      "lat": 34.0522,
+      "lng": -118.2437,
+      "circle": "Helen",
+      "bio": "Discovered the project through a Ukrainian film screening in Los Angeles and has written every week since.",
+      "postcards": ["public/postcards/bethany-frog.jpg"]
+    },
+    {
+      "id": "HelenE",
+      "name": "Helen E.",
+      "media": { "type": "video", "src": "public/media/HelenE.mp4" },
+      "city": "Stuttgart",
+      "country": "Germany",
+      "lat": 48.7758,
+      "lng": 9.1829,
+      "circle": "Helen",
+      "bio": "Writes from Stuttgart, where her family once received letters across another war's front lines.",
+      "postcards": ["public/postcards/bethany-gazebo.jpg"]
+    },
+    {
+      "id": "HelenF",
+      "name": "Helen F.",
+      "media": { "type": "video", "src": "public/media/HelenF.mp4" },
+      "city": "Descartes",
+      "country": "France",
+      "lat": 46.9736,
+      "lng": 0.7003,
+      "circle": "Helen",
+      "bio": "From a small town on the Creuse river, she paints each card by hand before it begins its long journey east.",
+      "postcards": ["public/postcards/laura-embroidered.jpg"]
+    },
+    {
+      "id": "HelenG",
+      "name": "Helen G.",
+      "media": { "type": "video", "src": "public/media/HelenG.mp4" },
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "circle": "Helen",
+      "bio": "Folds tropical sunshine into every card she sends from Singapore — the project's farthest-flung writing desk.",
+      "postcards": ["public/postcards/bowie-postcards.jpg"]
+    },
+    {
+      "id": "HelenH",
+      "name": "Helen H.",
+      "media": { "type": "audio", "src": "public/media/HelenH.mp3" },
+      "city": "Sukagawa (Fukushima)",
+      "country": "Japan",
+      "lat": 37.2864,
+      "lng": 140.3728,
+      "circle": "Helen",
+      "bio": "Writes from Fukushima prefecture, where her town's own story of recovery shapes the hope she mails to Ukraine.",
+      "postcards": ["public/postcards/dear-soldier-poem.jpg"]
+    },
+    {
+      "id": "JeanA",
+      "name": "Jean A.",
+      "media": { "type": "video", "src": "public/media/JeanA.mp4" },
+      "city": "Sydney",
+      "country": "Australia",
+      "lat": -33.8688,
+      "lng": 151.2093,
+      "circle": "Jean",
+      "bio": "Coordinates a Sydney writing circle that meets under the jacarandas every second Saturday.",
+      "postcards": ["public/postcards/debbie-xmas-3.jpg"]
+    },
+    {
+      "id": "JeanB",
+      "name": "Jean B.",
+      "media": { "type": "video", "src": "public/media/JeanB.mp4" },
+      "city": "San José",
+      "country": "Costa Rica",
+      "lat": 9.9281,
+      "lng": -84.0907,
+      "circle": "Jean",
+      "bio": "Sends cards bright with quetzals and rainforest green from Costa Rica's central valley.",
+      "postcards": ["public/postcards/bethany-frog.jpg"]
+    },
+    {
+      "id": "JeanC",
+      "name": "Jean C.",
+      "media": { "type": "video", "src": "public/media/JeanC.mp4" },
+      "city": "Miami (FL)",
+      "country": "United States",
+      "lat": 25.7617,
+      "lng": -80.1918,
+      "circle": "Jean",
+      "bio": "A retired postal worker in Miami who says she finally understands what the mail is really for.",
+      "postcards": ["public/postcards/kamloops-card-1.jpg"]
+    },
+    {
+      "id": "JeanD",
+      "name": "Jean D.",
+      "media": { "type": "video", "src": "public/media/JeanD.mp4" },
+      "city": "Kansas City (MO)",
+      "country": "United States",
+      "lat": 39.0997,
+      "lng": -94.5786,
+      "circle": "Jean",
+      "bio": "Writes with her grandchildren at the kitchen table in Kansas City — three generations, one envelope.",
+      "postcards": ["public/postcards/teddy-bear-cards.jpg"]
+    },
+    {
+      "id": "JeanE",
+      "name": "Jean E.",
+      "media": { "type": "video", "src": "public/media/JeanE.mp4" },
+      "city": "Cádiz",
+      "country": "Spain",
+      "lat": 36.5271,
+      "lng": -6.2886,
+      "circle": "Jean",
+      "bio": "From Europe's oldest port city, she mails cards that smell faintly of sea salt and orange blossom.",
+      "postcards": ["public/postcards/bethany-gazebo.jpg"]
+    },
+    {
+      "id": "HelenS",
+      "name": "Helen S.",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/07/05/postcards-a-beautiful-way-to-support-defenders/",
+        "title": "Postcards — a beautiful way to support Defenders"
+      },
+      "city": "Hobart, Tasmania",
+      "country": "Australia",
+      "lat": -42.8821,
+      "lng": 147.3272,
+      "circle": "Story",
+      "bio": "Writes from Hobart, Tasmania. Her story of why postcards matter was published on the PTTF blog in July 2026.",
+      "postcards": ["public/postcards/debbie-xmas-4.jpg"]
+    },
+    {
+      "id": "DebbieD",
+      "name": "Debbie D.",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/12/21/art-as-healing/",
+        "title": "Art as Healing"
+      },
+      "city": "Romsey",
+      "country": "Australia",
+      "lat": -37.351,
+      "lng": 144.742,
+      "circle": "Story",
+      "bio": "An artist in Romsey, Victoria, whose hand-painted Christmas postcards became a story of art as healing.",
+      "postcards": ["public/postcards/debbie-xmas-3.jpg", "public/postcards/debbie-xmas-4.jpg"]
+    },
+    {
+      "id": "Oksana",
+      "name": "Oksana",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/05/12/unbreakable-ukrainian-women/",
+        "title": "Unbreakable Ukrainian Women"
+      },
+      "city": "Smoline",
+      "country": "Ukraine",
+      "lat": 48.626,
+      "lng": 30.606,
+      "circle": "Story",
+      "bio": "Receives and distributes the cards in Ukraine, carrying thousands of messages the last mile to the Defenders.",
+      "postcards": ["public/postcards/arrival-frontlines-1.jpg", "public/postcards/arrival-frontlines-2.jpg"],
+      "receiving": true
+    }
+  ]
+}
