@@ -5,6 +5,9 @@
 set -e
 SRC="/Users/linda/Downloads/Connection/app"
 DEST="${1:-/private/tmp/claude-502/-Users-linda-Downloads-SOW/9fdc50de-ea81-4483-b20a-36ae3553cc7c/scratchpad/connection-site}"
+# The master dataset lives in Connection/Connection.csv — pull the latest copy
+# into the app so it's served (the app parses it as its single source of truth).
+cp "/Users/linda/Downloads/Connection/Connection.csv" "$SRC/data/connection.csv"
 mkdir -p "$DEST"
 rsync -a --delete --copy-links --exclude sync.sh "$SRC/" "$DEST/"
 echo "Synced to $DEST"

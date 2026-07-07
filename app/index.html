@@ -26,6 +26,19 @@
     </nav>
   </header>
 
+  <div id="display-controls" aria-label="Display options">
+    <label class="switch"><input type="checkbox" id="tg-names" checked /><span>Participant names</span></label>
+    <label class="switch"><input type="checkbox" id="tg-cities" checked /><span>Place names</span></label>
+    <label class="switch"><input type="checkbox" id="tg-countries" /><span>Country borders</span></label>
+    <label class="switch"><input type="checkbox" id="tg-day" /><span>Daylight globe</span></label>
+  </div>
+
+  <div id="zoom-control" aria-label="Zoom">
+    <button id="zoom-in" aria-label="Zoom in">+</button>
+    <input id="zoom-range" type="range" min="0" max="1000" value="650" aria-label="Zoom level" />
+    <button id="zoom-out" aria-label="Zoom out">&minus;</button>
+  </div>
+
   <main>
     <section id="globe-view" class="view active">
       <div id="globe"></div>
