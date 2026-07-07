@@ -9,17 +9,18 @@ export function initPanel(data, { onShowJourney, onClose }) {
   document.getElementById("panel-close").addEventListener("click", close);
   lightbox.addEventListener("click", () => (lightbox.hidden = true));
 
+  // Build the readable path from the participant's computed journey legs:
+  // e.g. Montreal → Millbrook → Lviv.
   function journeyLine(p) {
-    const hub = data.hub.name;
-    const legs = p.receiving
-      ? [data.hub.name, `${p.city}, ${p.country}`]
-      : p.city.includes(hub)
-        ? [p.city, data.destination.name]
-        : [`${p.city}`, hub, data.destination.name];
-    return legs
-      .map((l) => `<span class="leg">${l}</span>`)
+    if (!p.journey || !p.journey.length) {
+      return `<span class="leg">${cityShort(p.city)}</span>`;
+    }
+    const stops = [p.journey[0].from, ...p.journey.map((l) => l.to)];
+    return stops
+      .map((s) => `<span class="leg">${s}</span>`)
       .join('<span class="arrow">&#10148;</span>');
   }
+  const cityShort = (c) => (c || "").replace(/\s*\([^)]*\)/g, "").split(",")[0].trim();
 
   function mediaBlock(p) {
     const m = p.media;

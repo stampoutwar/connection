@@ -1,161 +1,165 @@
-// Constellation of participants — names as stars on the night sky, joined by
-// threads of what they share (country, interview circle, neighbouring routes).
-// Clicking a name draws it to the centre and radiates its connections,
-// echoing the museum kiosk in the reference video.
+// Constellation — participants as stars in an abstract 3D night sky. Two people
+// are joined by a thread when they share something (age group, profession,
+// hobby, ancestry, the same referrer, both postcrossers…). The extra dimension
+// gives the dense web of shared traits room to breathe: drag to rotate the
+// space, scroll to zoom, click a name to light up who they're connected to.
+
+import { cityShort } from "./util.js";
 
 export function initConstellation(canvas, data, onSelect) {
   const ctx = canvas.getContext("2d");
-  const { participants } = data;
+  const { participants, edges: rawEdges } = data;
 
-  // --- graph ---------------------------------------------------------------
-  const nodes = participants.map((p, i) => ({
-    p,
-    i,
-    x: 0, y: 0,        // current (animated) position
-    hx: 0, hy: 0,      // home position in the scattered sky
-    r: 3,
-    phase: Math.random() * Math.PI * 2,
-  }));
+  // --- nodes on a 3D sphere (even Fibonacci spread) ---------------------------
+  const N = participants.length;
+  const golden = Math.PI * (3 - Math.sqrt(5));
+  const nodes = participants.map((p, i) => {
+    const y = 1 - (i / (N - 1 || 1)) * 2; // 1 → -1
+    const r = Math.sqrt(Math.max(0, 1 - y * y));
+    const th = i * golden;
+    return {
+      p, i,
+      bx: Math.cos(th) * r, by: y, bz: Math.sin(th) * r, // base unit position
+      sx: 0, sy: 0, depth: 0, persp: 1, // filled each frame
+      phase: Math.random() * Math.PI * 2,
+      dph: 0.2 + Math.random() * 0.5,
+    };
+  });
+  const nodeById = new Map(nodes.map((n) => [n.p.id, n]));
 
-  const edges = [];
-  const seen = new Set();
-  function link(a, b, kind) {
-    const key = a.i < b.i ? `${a.i}-${b.i}` : `${b.i}-${a.i}`;
-    if (seen.has(key)) return;
-    seen.add(key);
-    edges.push({ a, b, kind });
-  }
-  for (const a of nodes) {
-    for (const b of nodes) {
-      if (a.i >= b.i) continue;
-      if (a.p.country === b.p.country) link(a, b, "country");
-      if (a.p.circle === b.p.circle) link(a, b, "circle");
-    }
-  }
-  // Longitude neighbours — postcards that share a stretch of sky on their way east.
-  const byLng = [...nodes].sort((a, b) => a.p.lng - b.p.lng);
-  for (let i = 0; i < byLng.length - 1; i++) link(byLng[i], byLng[i + 1], "route");
+  const edges = (rawEdges || [])
+    .map((e) => ({ a: nodeById.get(e.a), b: nodeById.get(e.b), weight: e.weight, reasons: e.reasons }))
+    .filter((e) => e.a && e.b);
+  const neighbourIds = new Map(nodes.map((n) => [n, new Set()]));
+  for (const e of edges) { neighbourIds.get(e.a).add(e.b); neighbourIds.get(e.b).add(e.a); }
 
-  const neighbours = (n) =>
-    edges.filter((e) => e.a === n || e.b === n).map((e) => (e.a === n ? e.b : e.a));
+  // --- camera -----------------------------------------------------------------
+  let rotY = 0.5, rotX = -0.15, zoom = 1;
+  const cam = { rotY, rotX, zoom }; // eased toward the targets above
+  let W = 0, H = 0, SCALE = 1;
+  const FOCAL = 3.0;
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
-  // --- layout ---------------------------------------------------------------
-  let W = 0, H = 0;
   function needsLayout() {
     return (
       canvas.width !== Math.round(canvas.clientWidth * devicePixelRatio) ||
       canvas.height !== Math.round(canvas.clientHeight * devicePixelRatio)
     );
   }
-  function layout(snap = false) {
+  function layout() {
     W = canvas.width = Math.round(canvas.clientWidth * devicePixelRatio);
     H = canvas.height = Math.round(canvas.clientHeight * devicePixelRatio);
-    // Scatter on a loose golden-angle spiral so names never collide badly.
-    const cx = W * 0.5, cy = H * 0.52;
-    const maxR = Math.min(W, H) * 0.4;
-    nodes.forEach((n, k) => {
-      const t = (k + 1) / nodes.length;
-      const ang = k * 2.39996 + 0.7;
-      const rad = maxR * (0.35 + 0.65 * Math.sqrt(t));
-      n.hx = cx + Math.cos(ang) * rad * 1.25;
-      n.hy = cy + Math.sin(ang) * rad * 0.8;
-      if (!started || snap) { n.x = n.hx; n.y = n.hy; }
-    });
-    if (selected) applyFocusTargets(selected);
+    SCALE = Math.min(W, H) * 0.34;
   }
 
-  // --- selection ------------------------------------------------------------
+  function project(n, t) {
+    // gentle drift on the base position
+    const d = 0.05;
+    let x = n.bx + Math.sin(t * 0.0002 * n.dph + n.phase) * d;
+    let y = n.by + Math.cos(t * 0.00017 * n.dph + n.phase) * d;
+    let z = n.bz + Math.sin(t * 0.00023 * n.dph + n.phase * 1.7) * d;
+    // rotate Y then X
+    const cY = Math.cos(cam.rotY), sY = Math.sin(cam.rotY);
+    let x1 = x * cY + z * sY;
+    let z1 = -x * sY + z * cY;
+    const cX = Math.cos(cam.rotX), sX = Math.sin(cam.rotX);
+    let y2 = y * cX - z1 * sX;
+    let z2 = y * sX + z1 * cX;
+    const persp = FOCAL / (FOCAL - z2); // z2 large = nearer = bigger
+    const cx = W / 2, cy = H * 0.52;
+    n.sx = cx + x1 * SCALE * cam.zoom * persp;
+    n.sy = cy - y2 * SCALE * cam.zoom * persp;
+    n.depth = z2;
+    n.persp = persp;
+  }
+
+  // --- selection & focus ------------------------------------------------------
   let selected = null;
   let hovered = null;
-  const targets = new Map(); // node -> {x, y}
-
-  function applyFocusTargets(sel) {
-    targets.clear();
-    const cx = W * 0.32, cy = H * 0.5; // leave room for the side panel
-    targets.set(sel, { x: cx, y: cy });
-    const ring = neighbours(sel);
-    const R = Math.min(W, H) * 0.33;
-    ring.forEach((n, k) => {
-      const ang = (k / ring.length) * Math.PI * 2 - Math.PI / 2;
-      const wobble = k % 2 ? 1.0 : 1.22; // alternate radii so names don't collide
-      targets.set(n, { x: cx + Math.cos(ang) * R * 1.15 * wobble, y: cy + Math.sin(ang) * R * wobble });
-    });
+  let targetRotY = rotY, targetRotX = rotX, targetZoom = zoom;
+  function faceNode(n) {
+    // rotate the space so this star swings to the front-centre
+    const mag = Math.hypot(n.bx, n.bz) || 1e-6;
+    targetRotY = Math.atan2(-n.bx, n.bz);
+    targetRotX = clamp(Math.atan2(n.by, mag), -1.2, 1.2);
   }
-
   function select(node) {
     selected = node;
-    if (node) applyFocusTargets(node);
-    else targets.clear();
+    if (node) faceNode(node);
   }
 
-  // --- interaction ----------------------------------------------------------
+  // --- interaction ------------------------------------------------------------
   function nodeAt(mx, my) {
-    const dpr = devicePixelRatio;
-    const x = mx * dpr, y = my * dpr;
-    const pad = 14 * dpr; // generous halo around both the star and its name
-    let best = null, bestD = Infinity;
+    const x = mx * devicePixelRatio, y = my * devicePixelRatio;
+    let best = null, bestD = 30 * devicePixelRatio;
     for (const n of nodes) {
-      const dDot = Math.hypot(n.x - x, n.y - y);
-      const r = n.hit; // label bounds captured during the last draw
-      const inLabel =
-        r && x >= r.x - pad && x <= r.x + r.w + pad && y >= r.y - pad && y <= r.y + r.h + pad;
-      if (!inLabel && dDot > 46 * dpr) continue;
-      const d = inLabel
-        ? Math.min(dDot, Math.hypot(r.x + r.w / 2 - x, r.y + r.h / 2 - y))
-        : dDot;
-      if (d < bestD) { best = n; bestD = d; }
+      const d = Math.hypot(n.sx - x, n.sy - y);
+      const r = (n.hitR || 20) ; // set during draw (name width)
+      const tol = Math.max(bestD, r);
+      if (d < tol && d < (best ? bestD : tol)) { best = n; bestD = d; }
     }
     return best;
   }
 
+  let dragging = false, dragMoved = false, lastX = 0, lastY = 0;
+  canvas.addEventListener("pointerdown", (e) => {
+    dragging = true; dragMoved = false; lastX = e.clientX; lastY = e.clientY;
+    canvas.setPointerCapture?.(e.pointerId);
+    canvas.style.cursor = "grabbing";
+  });
   canvas.addEventListener("pointermove", (e) => {
     const r = canvas.getBoundingClientRect();
+    if (dragging) {
+      const dx = e.clientX - lastX, dy = e.clientY - lastY;
+      targetRotY += dx * 0.006;
+      targetRotX = clamp(targetRotX + dy * 0.006, -1.35, 1.35);
+      cam.rotY += dx * 0.006; cam.rotX = clamp(cam.rotX + dy * 0.006, -1.35, 1.35);
+      if (Math.abs(dx) + Math.abs(dy) > 3) dragMoved = true;
+      lastX = e.clientX; lastY = e.clientY; hovered = null;
+      return;
+    }
     hovered = nodeAt(e.clientX - r.left, e.clientY - r.top);
-    canvas.style.cursor = hovered ? "pointer" : "default";
+    canvas.style.cursor = hovered ? "pointer" : "grab";
   });
-
-  canvas.addEventListener("click", (e) => {
+  canvas.addEventListener("pointerup", (e) => {
+    if (!dragging) return;
+    dragging = false; canvas.style.cursor = "grab";
+    if (dragMoved) return;
     const r = canvas.getBoundingClientRect();
     const n = nodeAt(e.clientX - r.left, e.clientY - r.top);
-    if (n) {
-      select(n);
-      onSelect(n.p.id);
-    } else {
-      select(null);
-      onSelect(null);
-    }
+    if (n) { select(n); onSelect(n.p.id); }
+    else { select(null); onSelect(null); }
   });
+  canvas.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    targetZoom = clamp(targetZoom * Math.exp(-e.deltaY * 0.0012), 0.55, 3);
+  }, { passive: false });
 
-  // --- render ---------------------------------------------------------------
-  let started = false;
-  let frameCount = 0;
-  let lastError = null;
+  // --- render -----------------------------------------------------------------
+  let started = false, frameCount = 0, lastError = null;
   function frame(t) {
-    try {
-      frameInner(t);
-    } catch (err) {
-      lastError = String(err.stack || err);
-    }
+    try { frameInner(t); } catch (err) { lastError = String(err.stack || err); }
     requestAnimationFrame(frame);
   }
   function frameInner(t) {
-    started = true;
-    frameCount++;
-    // Self-heal if the canvas size changed without a resize event firing
-    // (tab opened at a new size, window resized while hidden, etc.).
-    if (needsLayout()) layout(true);
-    ctx.clearRect(0, 0, W, H);
+    started = true; frameCount++;
+    if (needsLayout()) layout();
     const dpr = devicePixelRatio;
 
-    // ease nodes toward their targets (focus ring) or home
-    for (const n of nodes) {
-      const tgt = targets.get(n) || { x: n.hx, y: n.hy };
-      const drift = targets.has(n) || !selected ? 1 : 0.35; // unrelated stars recede
-      n.x += (tgt.x - n.x) * 0.06;
-      n.y += (tgt.y - n.y) * 0.06;
-      n.alphaTarget = selected ? (targets.has(n) ? 1 : 0.18) : 1;
-      n.alpha = (n.alpha ?? 1) + ((n.alphaTarget - (n.alpha ?? 1)) * 0.08) * drift;
-    }
+    // idle auto-rotation (only when nothing is held/selected)
+    if (!dragging && !selected) targetRotY += 0.0016;
+    cam.rotY += (targetRotY - cam.rotY) * 0.08;
+    cam.rotX += (targetRotX - cam.rotX) * 0.08;
+    cam.zoom += (targetZoom - cam.zoom) * 0.1;
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+
+    for (const n of nodes) project(n, t);
+    const order = [...nodes].sort((a, b) => a.depth - b.depth); // far → near
+
+    const selNeighbours = selected ? neighbourIds.get(selected) : null;
+    const isLit = (n) => !selected || n === selected || selNeighbours.has(n);
 
     // edges
     for (const e of edges) {
@@ -163,65 +167,61 @@ export function initConstellation(canvas, data, onSelect) {
         (selected && (e.a === selected || e.b === selected)) ||
         (!selected && hovered && (e.a === hovered || e.b === hovered));
       const dim = selected && !(e.a === selected || e.b === selected);
-      ctx.strokeStyle = active ? "rgba(236,234,251,0.75)" : "rgba(236,234,251,0.16)";
-      ctx.lineWidth = (active ? 1.1 : 0.6) * dpr;
-      ctx.globalAlpha = dim ? 0.25 : 1;
+      const depth = (e.a.depth + e.b.depth) / 2;
+      const near = (depth + 1) / 2; // 0 far → 1 near
+      let alpha = (0.05 + e.weight * 0.03) * (0.4 + 0.6 * near);
+      if (active) alpha = 0.55;
+      else if (dim) alpha *= 0.15;
+      ctx.strokeStyle = active ? "rgba(236,234,251,0.8)" : `rgba(200,206,244,${alpha.toFixed(3)})`;
+      ctx.lineWidth = (active ? 1.1 : 0.5 + e.weight * 0.08) * dpr;
       ctx.beginPath();
-      ctx.moveTo(e.a.x, e.a.y);
-      ctx.lineTo(e.b.x, e.b.y);
+      ctx.moveTo(e.a.sx, e.a.sy);
+      ctx.lineTo(e.b.sx, e.b.sy);
       ctx.stroke();
     }
-    ctx.globalAlpha = 1;
 
-    // nodes + names
-    for (const n of nodes) {
+    // nodes + names (near ones drawn last / on top)
+    for (const n of order) {
       const isSel = n === selected;
       const isHover = n === hovered;
+      const lit = isLit(n);
       const tw = 0.6 + 0.4 * Math.sin(n.phase + t / 900);
-      const glow = isSel ? 16 : isHover ? 12 : 7 * tw;
+      const baseAlpha = lit ? 1 : 0.16;
+      const nearFade = 0.55 + 0.45 * ((n.depth + 1) / 2); // dimmer when far
 
-      ctx.globalAlpha = n.alpha ?? 1;
+      // star
+      const glow = (isSel ? 16 : isHover ? 12 : 7 * tw) * n.persp;
+      ctx.globalAlpha = baseAlpha * nearFade;
       ctx.shadowColor = n.p.receiving ? "rgba(150,200,255,0.9)" : "rgba(232,196,118,0.9)";
       ctx.shadowBlur = glow * dpr;
       ctx.fillStyle = n.p.receiving ? "#bcd9ff" : "#f4e3b8";
       ctx.beginPath();
-      ctx.arc(n.x, n.y, (isSel ? 5 : 3.2) * dpr, 0, Math.PI * 2);
+      ctx.arc(n.sx, n.sy, (isSel ? 4.5 : 3) * n.persp * dpr, 0, Math.PI * 2);
       ctx.fill();
       ctx.shadowBlur = 0;
 
-      const fs = (isSel ? 34 : isHover ? 24 : 19) * dpr;
-      ctx.font = `500 ${fs}px "Cormorant Garamond", Georgia, serif`;
-      ctx.fillStyle = "#eceafb";
-      // Ring members get their name pushed radially outward from the selected
-      // star so labels never collide with its large title.
-      let lx = n.x, ly = n.y - (isSel ? 18 : 12) * dpr, align = "center";
-      if (selected && !isSel && targets.has(n)) {
-        const dx = n.x - selected.x, dy = n.y - selected.y;
-        const len = Math.hypot(dx, dy) || 1;
-        const ux = dx / len, uy = dy / len;
-        lx = n.x + ux * 24 * dpr;
-        ly = n.y + uy * 24 * dpr + 7 * dpr;
-        align = ux > 0.35 ? "left" : ux < -0.35 ? "right" : "center";
-      }
-      ctx.textAlign = align;
-      ctx.fillText(n.p.name, lx, ly);
-      // Remember where the name was drawn so clicks anywhere on it (not just
-      // the star) select this participant.
-      const textW = ctx.measureText(n.p.name).width;
-      const rx = align === "left" ? lx : align === "right" ? lx - textW : lx - textW / 2;
-      n.hit = { x: rx, y: ly - fs, w: textW, h: fs * 1.2 };
+      // name — warm serif (gold when focused)
+      const fs = (isSel ? 26 : isHover ? 21 : 16) * n.persp * dpr;
+      ctx.font = `600 ${fs}px "Cormorant Garamond", Georgia, serif`;
+      ctx.fillStyle = isSel || isHover ? "#e8c476" : "#f6ecc9";
       ctx.textAlign = "center";
+      ctx.shadowColor = "rgba(0,0,0,0.9)";
+      ctx.shadowBlur = 4 * dpr;
+      ctx.fillText(n.p.name, n.sx, n.sy - 10 * n.persp * dpr);
+      ctx.shadowBlur = 0;
+      n.hitR = (ctx.measureText(n.p.name).width / 2 + 8 * dpr);
 
+      // place caption — blue uppercase, on hover/select
       if (isSel || isHover) {
-        ctx.font = `300 ${11 * dpr}px "Jost", sans-serif`;
-        ctx.fillStyle = "rgba(232,196,118,0.95)";
-        ctx.fillText(`${n.p.city} · ${n.p.country}`.toUpperCase(), n.x, n.y + 24 * dpr);
+        ctx.font = `400 ${10 * dpr}px "Jost", sans-serif`;
+        ctx.fillStyle = "#97b0e6";
+        ctx.fillText(cityShort(n.p.city).toUpperCase(), n.sx, n.sy + 16 * n.persp * dpr);
       }
       ctx.globalAlpha = 1;
     }
   }
 
-  window.addEventListener("resize", () => layout());
+  window.addEventListener("resize", () => { if (needsLayout()) layout(); });
   if (typeof ResizeObserver !== "undefined") {
     new ResizeObserver(() => { if (needsLayout()) layout(); }).observe(canvas);
   }
@@ -229,19 +229,14 @@ export function initConstellation(canvas, data, onSelect) {
   requestAnimationFrame(frame);
 
   canvas.__debug = {
-    nodes, edges,
-    get selected() { return selected; },
-    get started() { return started; },
-    get frames() { return frameCount; },
-    get lastError() { return lastError; },
+    nodes, edges, get selected() { return selected; },
+    get frames() { return frameCount; }, get lastError() { return lastError; },
   };
 
   return {
     selectParticipant(id) {
-      select(id ? nodes.find((n) => n.p.id === id) ?? null : null);
+      select(id ? nodeById.get(id) ?? null : null);
     },
-    refresh() {
-      if (needsLayout()) layout(true);
-    },
+    refresh() { if (needsLayout()) layout(); },
   };
 }
