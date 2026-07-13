@@ -1,0 +1,149 @@
+{
+  "contributors": [
+    {
+      "name": "Antich",
+      "place": "Croatia",
+      "lat": 45.5,
+      "lng": 16.2,
+      "note": "postcard artist — sunflowers and glow art for the project",
+      "images": [
+        "public/contributors/antich-1.jpg",
+        "public/contributors/antich-2.jpg"
+      ]
+    },
+    {
+      "name": "Plathy and family",
+      "place": "United Kingdom",
+      "lat": 53.2,
+      "lng": -2.4,
+      "note": "the UK branch's early days — and the two Charlies card",
+      "images": [
+        "public/contributors/plathyandfamily-1.jpg",
+        "public/contributors/plathyandfamily-2.jpg"
+      ]
+    },
+    {
+      "name": "Heidi",
+      "place": "United States",
+      "lat": 41.5,
+      "lng": -100.9,
+      "note": "her cards photographed in Defenders' hands",
+      "images": [
+        "public/contributors/heidi-1.jpg"
+      ]
+    },
+    {
+      "name": "Bei",
+      "place": "Halifax (NS), Canada",
+      "lat": 44.65,
+      "lng": -63.58,
+      "note": "aurora borealis cards from the Atlantic coast",
+      "images": [
+        "public/contributors/bei-1.jpg"
+      ]
+    },
+    {
+      "name": "Diane",
+      "place": "Canada",
+      "lat": 52.5,
+      "lng": -95.0,
+      "note": "zentangle cards — tangling for Defenders",
+      "images": [
+        "public/contributors/diane-1.jpg"
+      ]
+    },
+    {
+      "name": "Granby Women's Institute",
+      "place": "Granby (QC), Canada",
+      "lat": 45.4,
+      "lng": -72.73,
+      "note": "children's teddy-bear cards",
+      "images": [
+        "public/contributors/granbywomensinst-1.jpg"
+      ]
+    },
+    {
+      "name": "Mount Pleasant Women's Institute",
+      "place": "Mount Pleasant (ON), Canada",
+      "lat": 43.09,
+      "lng": -80.32,
+      "note": "cards from an Ontario Women's Institute",
+      "images": [
+        "public/contributors/mountpleasantwom-1.jpg"
+      ]
+    },
+    {
+      "name": "Millbrook South Cavan Public School",
+      "place": "Millbrook (ON), Canada",
+      "lat": 44.16,
+      "lng": -78.43,
+      "note": "Grade 5 messages for Defenders and troops",
+      "images": [
+        "public/contributors/millbrooksouthca-1.jpg"
+      ]
+    },
+    {
+      "name": "Tetiana Protcheva",
+      "place": "Ukraine",
+      "lat": 48.8,
+      "lng": 33.4,
+      "note": "her embroidery art became project postcards",
+      "images": [
+        "public/contributors/tetianaprotcheva-1.jpg"
+      ]
+    },
+    {
+      "name": "Olex Kozak",
+      "place": "Ukraine",
+      "lat": 50.0,
+      "lng": 28.5,
+      "note": "glow-art card designs seen at the front lines",
+      "images": [
+        "public/contributors/olexkozak-1.jpg"
+      ]
+    },
+    {
+      "name": "Ildiko and friends",
+      "place": "Malta",
+      "lat": 35.9,
+      "lng": 14.4,
+      "note": "love from Malta — postcards for Defenders",
+      "images": [
+        "public/contributors/ildikoandfriends-1.jpg",
+        "public/contributors/ildikoandfriends-2.jpg"
+      ]
+    },
+    {
+      "name": "Friends in South Africa",
+      "place": "South Africa",
+      "lat": -29.0,
+      "lng": 25.0,
+      "note": "South African solidarity with Ukraine",
+      "images": [
+        "public/contributors/friendsinsouthaf-1.jpg",
+        "public/contributors/friendsinsouthaf-2.jpg"
+      ]
+    },
+    {
+      "name": "The Pas writers",
+      "place": "The Pas (MB), Canada",
+      "lat": 53.83,
+      "lng": -101.25,
+      "note": "batches of cards from northern Manitoba",
+      "images": [
+        "public/contributors/thepaswriters-1.jpg",
+        "public/contributors/thepaswriters-2.jpg"
+      ]
+    },
+    {
+      "name": "Michelle H.",
+      "place": "Saanichton (BC), Canada",
+      "lat": 48.6,
+      "lng": -123.42,
+      "note": "her cards, arrived and photographed",
+      "images": [
+        "public/contributors/michelleh-1.jpg"
+      ]
+    }
+  ]
+}

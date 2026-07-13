@@ -1,0 +1,1318 @@
+{
+  "hub": {
+    "name": "Millbrook",
+    "label": "Millbrook, Ontario — PTTF headquarters",
+    "lat": 44.15,
+    "lng": -78.448
+  },
+  "destination": {
+    "name": "Western Ukraine",
+    "label": "Western Ukraine — home base, where the cards land",
+    "lat": 49.1,
+    "lng": 24.9
+  },
+  "participants": [
+    {
+      "id": "HelenS",
+      "name": "Helen S.",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/07/05/postcards-a-beautiful-way-to-support-defenders/",
+        "title": "Postcards — a beautiful way to support Defenders"
+      },
+      "city": "Hobart, Tasmania",
+      "country": "Australia",
+      "lat": -42.8821,
+      "lng": 147.3272,
+      "circle": "Story",
+      "bio": "Helen writes from Hobart, between yoga, art sessions, long walks, and caring for her father, who is approaching 103. Her cards show Tasmania's animals and birds, each one carrying practised Ukrainian and a little English.",
+      "postcards": [],
+      "pullQuote": "No text or email will ever match up to a handwritten letter or postcard. No two people write in the same way, which I love!",
+      "quoteContext": "Helen writes from Hobart, choosing cards that show Tasmania's animals and birds, practising Ukrainian on every one. Each card, she feels, is her little bit in trying to stop the war.",
+      "defenderReplies": [
+        "public/postcards/arrival-frontlines-1.jpg"
+      ],
+      "publicAttrs": {
+        "hobbies": [
+          "yoga",
+          "art making",
+          "reading",
+          "walking"
+        ],
+        "foundVia": "a news item",
+        "writingStyle": "practise Ukrainian on their cards"
+      }
+    },
+    {
+      "id": "Debbie",
+      "name": "Debbie D.",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/12/21/art-as-healing/",
+        "title": "Art as Healing"
+      },
+      "city": "Romsey",
+      "country": "Australia",
+      "lat": -37.351,
+      "lng": 144.742,
+      "circle": "Story",
+      "bio": "An artist in Romsey, Victoria, whose hand-painted Christmas postcards became a story of art as healing.",
+      "postcards": [
+        "public/postcards/debbie-xmas-3.jpg",
+        "public/postcards/debbie-xmas-4.jpg",
+        "public/postcards/debbie-portrait.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "artist"
+        ],
+        "hobbies": [
+          "painting"
+        ],
+        "writingStyle": "make their own postcard art",
+        "ukraineTie": "friends in Lviv"
+      },
+      "quoteContext": "Her whimsical elves and fairies first cheered friends in Lviv, then raised funds for Okhmatdyt children's hospital. This Christmas her cards head for the front lines.",
+      "portrait": "public/postcards/debbie-portrait.jpg",
+      "portraitPosition": "13% 32%"
+    },
+    {
+      "id": "Oksana",
+      "name": "Oksana",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/05/12/unbreakable-ukrainian-women/",
+        "title": "Unbreakable Ukrainian Women"
+      },
+      "city": "Smoline",
+      "country": "Ukraine",
+      "lat": 48.626,
+      "lng": 30.606,
+      "circle": "Story",
+      "bio": "Oksana leads a branch of Unbreakable Ukrainian Women, weaving camouflage nets and carrying aid — and your postcards — to the front lines. The soldiers' thanks, she says, give her the energy to keep going.",
+      "postcards": [
+        "public/postcards/arrival-frontlines-1.jpg",
+        "public/postcards/arrival-frontlines-2.jpg"
+      ],
+      "receiving": true,
+      "pullQuote": "I simply couldn't sit back and do nothing. I knew I had to do at least something to help our Defenders.",
+      "quoteContext": "Since May 2023 she has headed her branch of Unbreakable Ukrainian Women — camouflage nets, charity concerts, aid runs to the front, all unpaid. Your postcards travel the last mile in her parcels."
+    },
+    {
+      "id": "Angela",
+      "name": "Angela",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Interview Angela, Ottawa"
+      },
+      "city": "Ottawa (ON)",
+      "country": "Canada",
+      "lat": 45.4215,
+      "lng": -75.6972,
+      "circle": "Story",
+      "bio": "A child of Oshawa's Ukrainian community, Angela protests outside the russian embassy in Ottawa several times a week — and gathers the protesters each month for postcard-writing cafés: a few hundred original cards and counting.",
+      "pullQuote": "Don't think about what you can't do – focus on what you can do.",
+      "quoteContext": "Her monthly postcard cafés with the embassy protesters have produced hundreds of original designs. Drawing tryzubs, flags and hearts, she says, is how she processes fear of the war news without burning out.",
+      "postcards": [
+        "public/postcards/angela-1.jpg",
+        "public/postcards/angela-2.jpg",
+        "public/postcards/angela-3.jpg"
+      ],
+      "publicAttrs": {
+        "hobbies": [
+          "crafting",
+          "drawing"
+        ],
+        "writingStyle": "make their own postcard art",
+        "ukraineTie": "child of the Oshawa Ukrainian community"
+      }
+    },
+    {
+      "id": "Laura",
+      "name": "Laura",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/06/27/human-connection-is-a-powerful-force",
+        "title": "Human connection is a powerful force"
+      },
+      "city": "Saskatchewan",
+      "country": "Canada",
+      "lat": 52.9399,
+      "lng": -106.4509,
+      "circle": "Story",
+      "bio": "Laura writes from Saskatchewan, where blue sky over yellow canola looks like Ukraine's flag. Raised amid Ukrainian dance and pierogi parties, she stitches Ukrainian embroidery onto her landscape postcards — about an hour of care per card.",
+      "pullQuote": "Seeing my cards in the hands of a Defender is THE best kind of reply.",
+      "quoteContext": "She found the project on Postcrossing and sends Saskatchewan landscapes whose blue skies and yellow fields echo the Ukrainian flag. Her hand-embroidered cards carry a Ukrainian pattern stitched into the open sky.",
+      "portrait": "public/postcards/laura-portrait.jpg",
+      "postcards": [
+        "public/postcards/laura-1.jpg",
+        "public/postcards/laura-2.jpg",
+        "public/postcards/laura-3.jpg",
+        "public/postcards/laura-4.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "information technology"
+        ],
+        "hobbies": [
+          "meditation",
+          "walking",
+          "reading",
+          "letter writing",
+          "embroidery"
+        ],
+        "foundVia": "Postcrossing",
+        "writingStyle": "practise Ukrainian on their cards",
+        "ukraineTie": "raised in Saskatchewan's Ukrainian community"
+      }
+    },
+    {
+      "id": "Faye",
+      "name": "Faye",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/07/09/what-i-make-with-my-hands",
+        "title": "What I make with my hands, I give with my heart"
+      },
+      "city": "Boston (MA)",
+      "country": "United States",
+      "lat": 42.3601,
+      "lng": -71.0589,
+      "circle": "Story",
+      "bio": "A retired preschool teacher just outside Boston, Faye shares her home with four rescue dogs and three rescue cats. She decorates the back of every postcard with blue-and-yellow flowers, making something beautiful on each card she sends.",
+      "pullQuote": "What I make with my hands, I give with my heart.",
+      "quoteContext": "Faye found the project through Postcrossing, and decorates every card back with flowers in blue and yellow. Four rescue dogs and three cats keep her busy between cards.",
+      "postcards": [
+        "public/postcards/faye-1.jpg",
+        "public/postcards/faye-2.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "teacher"
+        ],
+        "retired": "yes",
+        "hobbies": [
+          "crochet",
+          "swimming",
+          "gardening"
+        ],
+        "foundVia": "Postcrossing",
+        "pets": [
+          "dogs",
+          "cats"
+        ],
+        "writingStyle": "make their own postcard art"
+      }
+    },
+    {
+      "id": "Bethany",
+      "name": "Bethany",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Bethany B., Toronto – Postcards with loving and healing intentions"
+      },
+      "city": "Toronto (ON)",
+      "country": "Canada",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "circle": "Story",
+      "bio": "Bethany writes from Toronto, colouring each garden postcard by hand — an evening for the easy ones, two for the intricate. A lifelong letter-writer, she found the project while searching for a new pen-pal connection.",
+      "pullQuote": "It is sometimes the smallest thing to you that means the most to someone else.",
+      "quoteContext": "After her 89-year-old pen pal passed away, an online search for a new connection led Bethany here. She colours intricate garden postcards — two to six hours each — before writing a single word.",
+      "postcards": [
+        "public/postcards/bethany-hummingbirds.jpg",
+        "public/postcards/bethany-frog.jpg",
+        "public/postcards/bethany-gazebo.jpg"
+      ],
+      "publicAttrs": {
+        "hobbies": [
+          "colouring",
+          "letter writing"
+        ],
+        "foundVia": "an online search for a pen-pal group",
+        "writingStyle": "make their own postcard art"
+      }
+    },
+    {
+      "id": "Linda",
+      "name": "Linda",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "On Giving, Receiving, and an Open Door"
+      },
+      "city": "Montreal (QC)",
+      "country": "Canada",
+      "lat": 45.5019,
+      "lng": -73.5674,
+      "circle": "Story",
+      "bio": "An ex-mathematician turned visual artist and postal worker, Linda lays out this newsletter and has cycled more than twenty thousand kilometres across Canada, Europe, Japan and Taiwan. Her Postcrossing giveaways practise agapé — giving that expects nothing back.",
+      "pullQuote": "There was an open door, and a handful of people walking through it – leaving something beautiful behind for Ukraine's Defenders along the way.",
+      "quoteContext": "Raised in Taiwan to hold peace as her highest value, Linda turned her Postcrossing giveaways into open doors: optional swaps whose \"return\" is postcards written to Ukraine's Defenders.",
+      "postcards": [],
+      "publicAttrs": {
+        "professions": [
+          "visual artist",
+          "postal worker"
+        ],
+        "hobbies": [
+          "cycling",
+          "stamp collecting",
+          "photography"
+        ],
+        "writingStyle": "affix Ukraine-support stamps to their cards",
+        "ukraineTie": "grew up in Taiwan under the shadow of an impending war"
+      }
+    },
+    {
+      "id": "Anne",
+      "name": "Anne",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "From Singapore, with love"
+      },
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "circle": "Story",
+      "bio": "Anne writes from Singapore through the Australia branch. What began as nine postcards in July 2023 became thirty handmade cards a month — carrying her mother's eighty-year-old memories of war toward hope for Ukraine's rebuilding.",
+      "pullQuote": "As long as kindness prevails, there is still hope.",
+      "quoteContext": "Anne found her way here through Postcrossing and answers with handmade cards every month. Her mother lived through the Second World War in Singapore — the hardships, she says, never quite go away.",
+      "postcards": [],
+      "publicAttrs": {
+        "foundVia": "Postcrossing",
+        "writingStyle": "make their own postcard art",
+        "ukraineTie": "mother lived through WWII in Singapore"
+      }
+    },
+    {
+      "id": "Desiree",
+      "name": "Desiree",
+      "city": "Madrid",
+      "country": "Spain",
+      "lat": 40.4168,
+      "lng": -3.7038,
+      "circle": "Story",
+      "bio": "Desiree writes from Madrid, where she has spent a decade studying to become a judge. Answering one of Linda's Postcrossing swaps, she sent Defenders hand-written cards — each carrying Spain's Ukraine-support stamp, an extra gesture nobody asked for.",
+      "pullQuote": "There are causes worth sacrificing for. Like yours.",
+      "quoteContext": "Her cards came through one of Linda's Postcrossing swaps — hopes for rebirth written under Madrid's phoenix-turned-victory statue. She sought out Spain's own Ukraine-support stamp for every card, though none was required.",
+      "postcards": [
+        "public/postcards/desiree-1.jpg",
+        "public/postcards/desiree-2.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "aspiring judge"
+        ],
+        "foundVia": "Linda's Postcrossing giveaway",
+        "writingStyle": "affix Ukraine-support stamps to their cards"
+      }
+    },
+    {
+      "id": "Helen",
+      "name": "Helen",
+      "city": "Millbrook (ON)",
+      "country": "Canada",
+      "lat": 44.15,
+      "lng": -78.448,
+      "circle": "Team",
+      "bio": "Helen launched the Canada branch from Millbrook, Ontario, with Jean-Michel, after years teaching in a Ukrainian democracy-education project. Every card sent through Canada passes through her hands on its way to the front.",
+      "postcards": [],
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Get to know the Team … An Interview with Helen"
+      },
+      "pullQuote": "Nobody was dropping bombs on my house, so the least I could do was launch a Canadian branch.",
+      "quoteContext": "On the day of the invasion, she and Jean-Michel decided to act; a Postcrossing message from Peter in Australia showed the way. With guidance from Tamara in Ukraine, the Canada branch was rolling within a week.",
+      "publicAttrs": {
+        "professions": [
+          "educator"
+        ],
+        "hobbies": [
+          "reading",
+          "music"
+        ],
+        "foundVia": "Postcrossing",
+        "ukraineTie": "taught in Ukraine's democracy-education project"
+      }
+    },
+    {
+      "id": "Peter",
+      "name": "Peter",
+      "city": "Melbourne",
+      "country": "Australia",
+      "lat": -37.8136,
+      "lng": 144.9631,
+      "circle": "Team",
+      "bio": "Peter is the Australia branch ambassador in Melbourne, whose Postcrossing call to write to front-line Defenders sparked the Canada branch. His teammate Charlie — a dog with mascot duties — appears on many Australian cards.",
+      "postcards": []
+    },
+    {
+      "id": "Tamara",
+      "name": "Tamara",
+      "city": "Western Ukraine",
+      "country": "Ukraine",
+      "lat": 49.1,
+      "lng": 24.9,
+      "circle": "Team",
+      "receiving": true,
+      "bio": "Tamara coordinates Postcards to the Front from Ukraine, where your cards finally land. She left her beloved Zaporizhzhia for the safer west — boyfriend, bandura and Mr. Cat in tow — and hands the cards to the Defenders who ask for them by the hundreds.",
+      "postcards": [],
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/02/13/energize-ukraine/",
+        "title": "Life During the War: A Personal Story from Tamara"
+      },
+      "pullQuote": "My energy often runs out before my gratitude does.",
+      "quoteContext": "The founder's honest account: leaving home meant choosing safety over comfort, a small van packed with everything. Your postcards, she says, mean the world — even on the days the blackouts win.",
+      "publicAttrs": {
+        "professions": [
+          "postcard shop owner"
+        ],
+        "hobbies": [
+          "bandura"
+        ],
+        "pets": [
+          "cat"
+        ]
+      },
+      "portrait": "public/postcards/tamara-portrait.jpg"
+    },
+    {
+      "id": "Aloy and Edu",
+      "name": "Aloy and Edu",
+      "city": "San Jose",
+      "country": "Costa Rica",
+      "lat": 9.9281,
+      "lng": -84.0907,
+      "circle": "Story",
+      "bio": "Aloy and Edu, two young brothers in San José, collect kangaroo cards — more than 300 so far. When Costa Rica's mail to Ukraine stopped, they found another way: their cards travel through Millbrook.",
+      "postcards": [],
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2024/11/20/postcards-from-costa-rica",
+        "title": "Why Two Kids in Costa Rica Care about Ukraine"
+      },
+      "pullQuote": "Sending a lovely message to someone who is doing dangerous work is to admire. We respect them so much.",
+      "quoteContext": "Two brothers who practise English one postcard at a time, learning Ukrainian phrases \"in small sentences.\" Since reaching out, they have sent nearly a hundred cards to the front.",
+      "publicAttrs": {
+        "hobbies": [
+          "postcard collecting"
+        ],
+        "foundVia": "Postcrossing",
+        "writingStyle": "practise Ukrainian on their cards"
+      }
+    },
+    {
+      "id": "Garth",
+      "name": "Garth",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/05/17/love-will-defeat-savagery-and-fascism",
+        "title": "It is this love that will defeat savagery and fascism"
+      },
+      "city": "Gold Coast",
+      "country": "Australia",
+      "lat": -28.0167,
+      "lng": 153.4,
+      "circle": "Story",
+      "bio": "Garth writes from the Gold Coast, between a beehive of native stingless bees, a daily family of magpies, and a garden his wife calls an obsession. Unimpressed by shop cards, he designs his own — Australian birds, nasties and all.",
+      "pullQuote": "The card you write today may be the last thing the Defender ever reads on this earth. What will they read if you don't write it?",
+      "quoteContext": "A press story led him to the project; a stint in the military taught him what a card can mean in a trench. Seeing Defenders holding his designs, he says, stings the eyes — with joy.",
+      "postcards": [
+        "public/postcards/garth-1.jpg"
+      ],
+      "publicAttrs": {
+        "hobbies": [
+          "gardening",
+          "beekeeping"
+        ],
+        "foundVia": "a news story",
+        "writingStyle": "make their own postcard art"
+      },
+      "portrait": "public/postcards/garth-portrait.jpg"
+    },
+    {
+      "id": "Sarah",
+      "name": "Sarah",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2024/11/29/sarah-in-culpeper-virginia",
+        "title": "Sarah, in Culpeper, Virginia"
+      },
+      "city": "Culpeper (VA)",
+      "country": "United States",
+      "lat": 38.4735,
+      "lng": -77.9961,
+      "circle": "Story",
+      "bio": "Sarah flies a Ukrainian flag outside her Culpeper antique shop — four flags so far, each worn out by the weather. She prints postcards of the shopfront, gathers writers around her counter, and coaches a Ukrainian in English over Zoom.",
+      "pullQuote": "The Ukrainian people and their unflagging courage are breathtaking. It is so wonderful to find a small way to perhaps help a little.",
+      "quoteContext": "A veteran serving in Ukraine walked into her shop after spotting the flag, and told her about the project. Sunflowers run from her sidewalk to her shelves.",
+      "postcards": [
+        "public/postcards/sarah-1.jpg",
+        "public/postcards/sarah-2.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "antique shop owner"
+        ],
+        "foundVia": "a visitor to her shop",
+        "writingStyle": "make their own postcard art"
+      }
+    },
+    {
+      "id": "Renee",
+      "name": "Renee",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/02/05/writing-postcards-to-defenders-is-a-sad-joy",
+        "title": "Writing postcards to Defenders is a sad joy"
+      },
+      "city": "Chicago (IL)",
+      "country": "United States",
+      "lat": 41.8781,
+      "lng": -87.6298,
+      "circle": "Story",
+      "bio": "Renee writes from Chicago with a Postcrosser's practised hand and a stack of cute dog cards. Her Cyrillic is \"shaky and totally amateurish,\" she admits — but every card is a labor of love aimed at a stranger's heart.",
+      "pullQuote": "It's a huge privilege to touch another human's heart, especially one who is fighting for their very existence.",
+      "quoteContext": "A Postcrossing friend recommended the project, and Renee answered with fabulous dog cards from faraway Chicago. Writing to Defenders, she says, is a different mindset from any postcard she'd written before.",
+      "postcards": [
+        "public/postcards/renee-1.jpg"
+      ],
+      "publicAttrs": {
+        "foundVia": "Postcrossing",
+        "writingStyle": "practise Ukrainian on their cards"
+      },
+      "portrait": "public/postcards/renee-portrait.jpg"
+    },
+    {
+      "id": "Nancy",
+      "name": "Nancy",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/02/07/something-heals-inside",
+        "title": "A little something heals"
+      },
+      "city": "United States",
+      "country": "United States",
+      "lat": 39.8283,
+      "lng": -98.5795,
+      "circle": "Story",
+      "bio": "Nancy writes from the United States, threading Cyrillic phrases onto every card. Her grandparents fled pogroms in Ukraine and Russia a century ago; each note she writes in sympathy to Ukraine heals, she says, a little something inside.",
+      "pullQuote": "Every time I write a note in sympathy to Ukraine, a little something heals inside me.",
+      "quoteContext": "Her Jewish grandparents escaped Ukraine and Russia under haystacks and past border guards. In 2022 she chose to write to \"the grandchildren of the gonifs\" — and found an old anger easing with every card.",
+      "postcards": [
+        "public/postcards/nancy-1.jpg",
+        "public/postcards/nancy-2.jpg"
+      ],
+      "publicAttrs": {
+        "foundVia": "Postcrossing",
+        "writingStyle": "practise Ukrainian on their cards",
+        "ukraineTie": "grandparents fled Ukraine and Russia"
+      }
+    },
+    {
+      "id": "Brigitte",
+      "name": "Brigitte",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/04/05/postcards-offer-reassurance-to-defenders-you-are-not-alone",
+        "title": "Postcards offer reassurance to Defenders: \"You are not alone\""
+      },
+      "city": "Montreal (QC)",
+      "country": "Canada",
+      "lat": 45.5019,
+      "lng": -73.5674,
+      "circle": "Story",
+      "bio": "Brigitte grew up around military bases — her father a Canadian Forces captain, often deployed. She writes cheerful cards to Defenders, makes some by hand, and recruits her grandchildren: tanks crossed out in crayon, hugs written in Ukrainian.",
+      "pullQuote": "Every human should stand with soldiers that are defending their homeland — let them know that they are not alone.",
+      "quoteContext": "A military childhood taught her what family separation costs; Postcrossing taught her to treat each card as a conversation with someone just met. Her grandkids write too, each in their own way.",
+      "postcards": [
+        "public/postcards/brigitte-1.jpg",
+        "public/postcards/brigitte-2.jpg"
+      ],
+      "publicAttrs": {
+        "foundVia": "Postcrossing",
+        "writingStyle": "make their own postcard art"
+      },
+      "portrait": "public/postcards/brigitte-portrait.jpg",
+      "portraitPosition": "50% 30%"
+    },
+    {
+      "id": "Eun",
+      "name": "Eun",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/01/14/rising-to-the-occasion",
+        "title": "Rising to the occasion to be a light in the world"
+      },
+      "city": "New York City",
+      "country": "United States",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "circle": "Story",
+      "bio": "Eun writes from New York City — Spider-Man boxes, cat cards, and art from her own collection, two hundred Defenders and counting. Every card ends the same way, three languages deep: Glory to Ukraine, Слава Україні, 우크라이나 만세.",
+      "pullQuote": "You don't have to be Ukrainian to support Ukraine; just human.",
+      "quoteContext": "NAFO pointed her to the project just after she'd helped fund a medical convoy to the front. Years of pastoral-care visits, she says, were great practice for writing to strangers in trenches.",
+      "postcards": [
+        "public/postcards/eun-1.jpg",
+        "public/postcards/eun-2.jpg",
+        "public/postcards/eun-3.jpg"
+      ],
+      "publicAttrs": {
+        "foundVia": "NAFO on X",
+        "hobbies": [
+          "letter writing",
+          "stationery collecting"
+        ]
+      },
+      "portrait": "public/postcards/eun-portrait.jpg"
+    },
+    {
+      "id": "Ela",
+      "name": "Ela",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "An Interview with Ela who recently sent her 100th card"
+      },
+      "city": "Tasmania",
+      "country": "Australia",
+      "lat": -43.0,
+      "lng": 147.25,
+      "circle": "Story",
+      "bio": "Ela writes from a small seaside town south of Hobart — \"the best place in the world,\" she admits, biased. Six cards every weekend, decorated with stickers, washi tape and eccentric Ukrainian, aiming for two hundred a year.",
+      "pullQuote": "That something so simple can make such a big difference – that every card does count.",
+      "quoteContext": "She found the project through an ABC News article and contacted Peter; weekends are quarantined for card-writing. Her parents fled communism in Poland for Tasmania in the 1960s.",
+      "postcards": [],
+      "publicAttrs": {
+        "foundVia": "a news story",
+        "writingStyle": "make their own postcard art",
+        "hobbies": [
+          "music"
+        ],
+        "ukraineTie": "parents fled communism in Poland"
+      }
+    },
+    {
+      "id": "Libby",
+      "name": "Libby",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "My Ukraine Story"
+      },
+      "city": "Australia",
+      "country": "Australia",
+      "lat": -25.2744,
+      "lng": 133.7751,
+      "circle": "Story",
+      "bio": "Libby's Ukraine story began with boxes of Aussie soft toys and books hauled to Poland for displaced children. These days her focus is postcards — as many as she can send, until Ukraine is victorious. Because they will be.",
+      "pullQuote": "Sending as many postcards as I can to continue to make a small difference in this big war. Until Ukraine is victorious. Because they will be. They have to be.",
+      "quoteContext": "She scoured every Kmart and Big W for Aussie animal soft toys bound for Krakow, then met the families she'd helped. A friend in Ukraine told her exactly what the cards mean: \"This gives us power.\"",
+      "postcards": [],
+      "publicAttrs": {}
+    },
+    {
+      "id": "Connie",
+      "name": "Connie",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/04/26/prairie-reflections-postcards",
+        "title": "Saskatchewan artist reflects on Ukraine in postcard design"
+      },
+      "city": "Regina (SK)",
+      "country": "Canada",
+      "lat": 50.4452,
+      "lng": -104.6189,
+      "circle": "Story",
+      "bio": "Connie has lived in Regina all her life, two generations on from grandparents who dug into Saskatchewan's frozen prairie after leaving Ukraine. Her Prairie Reflections cards carry anemones and kalyna berries — designed to be beautiful, and meaningful.",
+      "pullQuote": "I believe Ukrainian people are strong, courageous and resilient to this day.",
+      "quoteContext": "Her grandparents arrived from Ukraine in the late 1800s — 160 acres for ten dollars, and a hole warmed in the winter ground to survive. Her peace dove carries kalyna berries, the old metaphor for Ukrainian nationhood.",
+      "postcards": [
+        "public/postcards/connie-1.jpg",
+        "public/postcards/connie-2.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "card designer"
+        ],
+        "foundVia": "an online search",
+        "writingStyle": "make their own postcard art",
+        "ukraineTie": "grandparents immigrated from Ukraine"
+      }
+    },
+    {
+      "id": "Jane",
+      "name": "Jane",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "How one postcard warrior transformed shock and dismay into action"
+      },
+      "city": "New South Wales",
+      "country": "Australia",
+      "lat": -32.5,
+      "lng": 147.0,
+      "circle": "Story",
+      "bio": "Jane writes from a small village in country New South Wales, where the Black Summer fires taught her a little of what fleeing feels like. She writes every month, keeps up with the news, and tells everyone she can.",
+      "pullQuote": "Each postcard that I write lets them know THEY ARE NOT FORGOTTEN.",
+      "quoteContext": "An ABC News article brought her in; imagining an army bursting into her own lovely village kept her writing. A Latvian tour guide who knits Defender socks every two days remains her benchmark.",
+      "postcards": [
+        "public/postcards/jane-1.jpg"
+      ],
+      "publicAttrs": {
+        "foundVia": "a news story"
+      }
+    },
+    {
+      "id": "Fedia",
+      "name": "Fedia",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2024/11/30/how-fedia-took-postcards-to-the-front-into-chicago",
+        "title": "How Fedia took Postcards to the Front into Chicago"
+      },
+      "city": "Chicago (IL)",
+      "country": "United States",
+      "lat": 41.8781,
+      "lng": -87.6298,
+      "circle": "Story",
+      "bio": "Fedia met the project at a Ukrainian youth gathering in Ontario and carried it home to Chicago — to MAK Chicago, his mother Orysia's shop, where visitors now write to Defenders between the shelves.",
+      "pullQuote": "A big component to victory is keeping up morale. These postcard messages do exactly that.",
+      "quoteContext": "Raised in ODUM's Ukrainian-heritage tradition, he wrote his first cards at a project booth in Clarington, Ontario. Now MAK Chicago's customers write alongside him.",
+      "postcards": [
+        "public/postcards/fedia-1.jpg",
+        "public/postcards/fedia-2.jpg"
+      ],
+      "publicAttrs": {
+        "foundVia": "meeting Helen at a Ukrainian youth gathering",
+        "ukraineTie": "ODUM Ukrainian-heritage community"
+      },
+      "portrait": "public/postcards/fedia-portrait.jpg"
+    },
+    {
+      "id": "Jan",
+      "name": "Jan",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "The power of unexpected kindness"
+      },
+      "city": "Merrickville (ON)",
+      "country": "Canada",
+      "lat": 44.9169,
+      "lng": -75.8353,
+      "circle": "Story",
+      "bio": "Jan created Postcard Polina — a beacon of hope named for a friend sheltering in Odesa — and rallied her whole village of 1,600: the print shop, the schools, the Legion, the Lions, all writing to the front.",
+      "pullQuote": "Blessings to you, to those who stand beside you and to those you love. Sending you strength, determination, endurance, faith, love and peace.",
+      "quoteContext": "Forty years after meeting Helen over environmental work, fate came calling again. Her first card began by imagining herself in a Defender's shoes: what would I need to keep going?",
+      "postcards": [
+        "public/postcards/jan-1.jpg"
+      ],
+      "publicAttrs": {
+        "foundVia": "friends Helen and Jean-Michel"
+      }
+    },
+    {
+      "id": "Marcus",
+      "name": "Marcus",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Always a soldier, \"my brothers and sisters in Ukraine get my support\""
+      },
+      "city": "Arizona",
+      "country": "United States",
+      "lat": 34.2,
+      "lng": -111.7,
+      "circle": "Story",
+      "bio": "A battle-worn American veteran of Desert Storm, Marcus has sent eight hundred cards toward a goal of a thousand — military quotes from Caesar to John Wayne, batch-produced a hundred at a time, soldier to soldier.",
+      "pullQuote": "[The letters I received in battle] reminded me to stay my course as well as why I was there. Sending anything shows a soldier your support. It truly is a morale boost!",
+      "quoteContext": "He designs his own Christmas cards — Santa included, soldier to soldier — and knows first-hand what mail means at the front. Two hundred cards to go on his first thousand.",
+      "postcards": [
+        "public/postcards/marcus-1.jpg",
+        "public/postcards/bowie-postcards.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "veteran"
+        ],
+        "writingStyle": "make their own postcard art"
+      },
+      "portrait": "public/postcards/marcus-portrait.jpg"
+    },
+    {
+      "id": "Kerry",
+      "name": "Kerry",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Introducing Australia branch's social media manager, Kerry"
+      },
+      "city": "Geelong",
+      "country": "Australia",
+      "lat": -38.1499,
+      "lng": 144.3617,
+      "circle": "Team",
+      "bio": "Kerry, a textiles and fashion teacher originally from the UK, turned her Australian school into a card-writing engine — 110 students' cards in one round, a Ukrainian flag over the yard, and a quilt block sent to wrap a war-torn building in love.",
+      "pullQuote": "Seeing the photos of Defenders proudly holding cards and hearing their joy at reading a card … How could you not think it worthwhile?",
+      "quoteContext": "She met the project at Geelong's Mama's Market in 2023 and now runs PTTF Australia's social media. A Defender she corresponds with receives her students' translated messages.",
+      "postcards": [
+        "public/postcards/kerry-1.jpg",
+        "public/postcards/kerry-2.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "teacher"
+        ],
+        "foundVia": "Mama's Market in Geelong",
+        "writingStyle": "practise Ukrainian on their cards"
+      },
+      "portrait": "public/postcards/kerry-portrait.jpg"
+    },
+    {
+      "id": "Annie",
+      "name": "Annie",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "A love letter from Annie – Part 1"
+      },
+      "city": "Somewhere in Australia",
+      "country": "Australia",
+      "lat": -27.0,
+      "lng": 135.5,
+      "circle": "Story",
+      "bio": "Annie writes from Australia — and went much further: in February 2024 she took the twenty-hour bus from Warsaw to Kharkiv, volunteering to package and deliver food to bombing victims and front-line soldiers.",
+      "pullQuote": "I wanted to be a part of something bigger than my own little world.",
+      "quoteContext": "Her \"love letter\" to the postcard warriors began before departure: outrage in 2022, bags of clothing to a Warsaw refugee camp, then the decision to go herself.",
+      "postcards": [],
+      "publicAttrs": {}
+    },
+    {
+      "id": "Joke",
+      "name": "Joke",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Defenders are often 'just' citizens who need our support"
+      },
+      "city": "Utrecht",
+      "country": "Netherlands",
+      "lat": 52.0907,
+      "lng": 5.1214,
+      "circle": "Story",
+      "bio": "Joke writes from Utrecht — a pacifist who marched against cruise missiles in the 1980s, and thought hard before writing to soldiers. The people at Ukraine's front, she realized, are often simply citizens defending their country.",
+      "pullQuote": "If you cannot help in another way, at least you can write messages of support.",
+      "quoteContext": "Her cards match message to image: a train card honours Ukraine's proud railways, a flower card becomes a gift. She writes Ukrainian phrases, prints her own cards, and funds helmets and trauma kits besides.",
+      "postcards": [],
+      "publicAttrs": {
+        "writingStyle": "practise Ukrainian on their cards"
+      }
+    },
+    {
+      "id": "Maureen",
+      "name": "Maureen",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Postcards: We Reach Out, We Care, We Acknowledge"
+      },
+      "city": "Canada",
+      "country": "Canada",
+      "lat": 54.5,
+      "lng": -100.0,
+      "circle": "Story",
+      "bio": "Maureen writes from Canada, remembering a time forty-five years ago when she worked abroad for an NGO and mail was her lifeline. A friend's pandemic postcards taught her their power; now she sends it onward.",
+      "pullQuote": "This message of connection, caring, and acknowledgement is the power within these postcards.",
+      "quoteContext": "A postcarding friend recruited her to a local campaign for Defenders. She still keeps the silly, homemade cards that carried her through the pandemic.",
+      "postcards": [],
+      "publicAttrs": {
+        "foundVia": "a friend's campaign"
+      }
+    },
+    {
+      "id": "Marta",
+      "name": "Marta",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Postcards … something in my power to do"
+      },
+      "city": "Toronto (ON)",
+      "country": "Canada",
+      "lat": 43.6532,
+      "lng": -79.3832,
+      "circle": "Story",
+      "bio": "Marta works at Toronto's St. Volodymyr Institute, a hub of Ukrainian-Canadian culture. Once an initiator of Postcards for Prisoners, she now gathers friends and Ukrainian students for card-writing evenings — speakeasy fundraisers included.",
+      "pullQuote": "Sometimes it's a matter of organizing people and giving them a straightforward way to get involved. I knew I could do that.",
+      "quoteContext": "A friend forwarded her a post, knowing her history: she'd organized postcard campaigns for Ukrainians held in Russian prisons after 2014. Her group writes on repurposed Christmas cards.",
+      "postcards": [],
+      "publicAttrs": {
+        "foundVia": "a friend's forward",
+        "writingStyle": "make their own postcard art",
+        "ukraineTie": "Ukrainian roots; works at Toronto's Ukrainian-Canadian hub"
+      }
+    },
+    {
+      "id": "Grant",
+      "name": "Grant",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Interview with Grant H., Muskoka"
+      },
+      "city": "Muskoka",
+      "country": "Canada",
+      "lat": 45.32,
+      "lng": -79.21,
+      "circle": "Story",
+      "bio": "Grant writes from Muskoka cottage country, where he has followed Russia's war on Ukraine since 2014. He designs his own cards — English through Google Translate, photo attached, printed at the copy shop overnight.",
+      "pullQuote": "They are fighting for Canada. They are fighting for me, and for my grandchildren. A postcard is a tiny speck of what they are owed.",
+      "quoteContext": "Twelve years of watching taught him deep admiration for Ukraine's creative, vigorous defence. His first drafts were saltier — the website's advice toned down his \"childish sense of humor.\" Reluctantly.",
+      "postcards": [],
+      "publicAttrs": {
+        "foundVia": "a friend's card-writing event",
+        "writingStyle": "make their own postcard art"
+      }
+    },
+    {
+      "id": "Susan and Colin",
+      "name": "Susan and Colin",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/06/21/supporting-defenders-from-the-other-side-of-the-world",
+        "title": "Supporting Defenders from the other side of the world"
+      },
+      "city": "Melbourne South-East",
+      "country": "Australia",
+      "lat": -37.95,
+      "lng": 145.15,
+      "circle": "Story",
+      "bio": "Sue and Colin, a retired couple in Melbourne's south-east, recruited their church youth group and a Christian school to the cause — 150 extra cards. Colin is getting really good at the Ukrainian sentences.",
+      "pullQuote": "Hopefully a warm greeting on the postcard will give them something positive to think about amidst much suffering.",
+      "quoteContext": "An ABC news item brought them in; four years on they're still writing, an Australian flag sticker on every card so Defenders know where the love came from.",
+      "postcards": [
+        "public/postcards/susanandcolin-portrait.jpg"
+      ],
+      "publicAttrs": {
+        "retired": "yes",
+        "foundVia": "a news story",
+        "writingStyle": "practise Ukrainian on their cards"
+      },
+      "portrait": "public/postcards/susanandcolin-portrait.jpg",
+      "portraitPosition": "50% 30%"
+    },
+    {
+      "id": "Rachael",
+      "name": "Rachael",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "There's always something that one can do"
+      },
+      "city": "United Kingdom",
+      "country": "United Kingdom",
+      "lat": 52.5,
+      "lng": -1.9,
+      "circle": "Story",
+      "bio": "Rachael writes from the United Kingdom, where Ukraine's blackout winters kicked her into action: baby blankets and hats from her own hands, postcards alongside — because what's small for one person can keep another warm.",
+      "pullQuote": "Small acts can make a huge difference.",
+      "quoteContext": "Wartime stories of sock-knitters and letter-writers inspired her search for a way in; she found the project online. Blankets for the cold, cards for the forgotten.",
+      "postcards": [],
+      "publicAttrs": {
+        "hobbies": [
+          "knitting"
+        ],
+        "foundVia": "an online search"
+      }
+    },
+    {
+      "id": "Brandon",
+      "name": "Brandon",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "When Zelenskyy called, Brandon answered"
+      },
+      "city": "Oshawa (ON)",
+      "country": "Canada",
+      "lat": 43.8971,
+      "lng": -78.8658,
+      "circle": "Story",
+      "bio": "Brandon — \"Фродо\" to his Ukrainian colleagues — left Oshawa for Ukraine after the full-scale invasion, becoming lead infantry-tactics instructor for a veteran-run NGO and spending a year in-country, including at the front.",
+      "pullQuote": "Messages of support are very uplifting … It lets everyone know that Ukraine doesn't exist in a vacuum, and isn't alone.",
+      "quoteContext": "He'd tracked open-source intelligence since day one of the invasion; when Zelenskyy called for volunteers, his family already knew he'd go.",
+      "postcards": [],
+      "publicAttrs": {
+        "ukraineTie": "served as a volunteer instructor in Ukraine"
+      }
+    },
+    {
+      "id": "Sasha",
+      "name": "Sasha",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/01/28/postcards-that-carry-courage",
+        "title": "Postcards That Carry Courage"
+      },
+      "city": "Kamloops (BC)",
+      "country": "Canada",
+      "lat": 50.6745,
+      "lng": -120.3273,
+      "circle": "Story",
+      "bio": "Sasha has stood with Kamloops Stands with Ukraine every Saturday since the invasion — snow, rain, or scorching heat. Twenty years of academic life now feed a course, Postcards That Carry Courage, preserving the project's story.",
+      "pullQuote": "The living proof that postcards heal, one moment at a time.",
+      "quoteContext": "Rose in Oshawa forwarded the newsletters; Michelle made card-writing central to the Kamloops rallies; photos from the front now hang on their gathering tree. Sasha documents it all — and teaches it.",
+      "postcards": [
+        "public/postcards/kamloops-card-1.jpg",
+        "public/postcards/kamloops-card-2.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "academic"
+        ],
+        "foundVia": "a friend's forward"
+      }
+    },
+    {
+      "id": "Svitlana",
+      "name": "Svitlana",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2024/11/26/its-so-hard-to-cope-with-all-the-sorrows-a-postcard-makes-you-feel-that-you-are-not-alone",
+        "title": "Interview with Svitlana"
+      },
+      "city": "Rivne region",
+      "country": "Ukraine",
+      "lat": 50.65,
+      "lng": 26.6,
+      "circle": "Ukraine",
+      "bio": "Svitlana lives in a village in Rivne region — Helen's friend of decades since Canada World Youth. With her brother and nephews defending Ukraine, she and her family pack care parcels for the front: food, love, and postcards.",
+      "pullQuote": "A postcard makes you feel that you are not alone; you feel happy. It's a precious gift.",
+      "quoteContext": "Air raids reach even Ukraine's west, where she and her Ostroh colleagues volunteer. Defenders film videos of thanks, she says, for the cards that bring \"fresh air.\"",
+      "postcards": [
+        "public/postcards/svitlana-1.jpg"
+      ],
+      "publicAttrs": {}
+    },
+    {
+      "id": "Nadia",
+      "name": "Nadia",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2024/12/01/postcard-support-gives-strength-and-courage",
+        "title": "Interview with Nadia"
+      },
+      "city": "Zaporizhzhia",
+      "country": "Ukraine",
+      "lat": 47.8388,
+      "lng": 35.1396,
+      "circle": "Ukraine",
+      "bio": "Nadia quit her pharmacist's job when the rockets came, then returned to work — one way to normalize an unnormal life. A relative defends Ukraine; they message every day and have met twice in two years.",
+      "pullQuote": "I realized that the world is not indifferent to what is happening in Ukraine. And this support gave me strength and courage not to give up and move on.",
+      "quoteContext": "Postcrossing brought her the world's support after 2022. The project, she says, made an incredible impression — it unites so many people in different parts of the world.",
+      "postcards": [
+        "public/postcards/nadia-1.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "pharmacist"
+        ],
+        "foundVia": "Postcrossing"
+      },
+      "portrait": "public/postcards/nadia-portrait.jpg",
+      "portraitPosition": "72% 30%"
+    },
+    {
+      "id": "Dasha",
+      "name": "Dasha",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2024/10/09/meet-dasha",
+        "title": "Meet Dasha, a volunteer from Dnipro"
+      },
+      "city": "Dnipro",
+      "country": "Ukraine",
+      "lat": 48.4647,
+      "lng": 35.0462,
+      "circle": "Ukraine",
+      "bio": "Dasha studied at university and danced folk dance before the invasion; now volunteering is her life. Co-founder of a charity fund in Dnipro, she packs and delivers soldiers' requests — postcards riding along in every parcel.",
+      "pullQuote": "The worst thing for me in this situation would be to stand aside.",
+      "quoteContext": "The soldiers she supplies take cards for comrades in neighbouring brigades and decorate their quarters with them. Children's words, she says, are valued most of all.",
+      "postcards": [],
+      "publicAttrs": {
+        "hobbies": [
+          "folk dancing"
+        ]
+      },
+      "portrait": "public/postcards/dasha-portrait.jpg"
+    },
+    {
+      "id": "Mr. Cat",
+      "name": "Mr. Cat",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2024/11/22/interview-with-mr-cat",
+        "title": "Interview with Mr. Cat"
+      },
+      "city": "Home base, Western Ukraine",
+      "country": "Ukraine",
+      "lat": 49.05,
+      "lng": 24.75,
+      "circle": "Ukraine",
+      "bio": "Mr. Cat, fifteen — \"Grand Mr. Cat\" to you — supervises home base from Tamara's flat in Ukraine's west. He inspected every incoming envelope until the allergy rules came in, and remains the project's most opinionated volunteer.",
+      "pullQuote": "I am a supporter!",
+      "quoteContext": "Rescued and healed by Dima, he moved west with the family when Zaporizhzhia's sirens got too loud. He endorses cat cards, tolerates no dogs, and once helped stamp postcards by walking all over them.",
+      "postcards": [
+        "public/postcards/mrcat-1.jpg"
+      ],
+      "publicAttrs": {},
+      "portrait": "public/postcards/mrcat-portrait.jpg"
+    },
+    {
+      "id": "Andriy",
+      "name": "Andriy",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/01/01/postcards-remind-a-person-that-they-are-human",
+        "title": "Postcards remind a person that they are human"
+      },
+      "city": "Ternopil",
+      "country": "Ukraine",
+      "lat": 49.5535,
+      "lng": 25.5948,
+      "circle": "Ukraine",
+      "bio": "Andriy printed stamps and seals for twenty years — then, in spring 2024, he was mobilized and became a soldier again. He can't say where he serves; he can say what the postcards mean there.",
+      "pullQuote": "War changes people. … You love your loved ones more, care for them more, and worry about them more. Small troubles become insignificant.",
+      "quoteContext": "A printing entrepreneur before the war, he never left when the invasion came. Several relatives and friends also defend Ukraine; some of his comrades-in-arms are no longer alive.",
+      "postcards": [
+        "public/postcards/andriy-1.jpg",
+        "public/postcards/andriy-2.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "printing entrepreneur"
+        ]
+      },
+      "portrait": "public/postcards/andriy-1.jpg",
+      "portraitPosition": "35% 10%",
+      "photoPositions": [
+        "50% 12%",
+        "50% 18%"
+      ]
+    },
+    {
+      "id": "Inna",
+      "name": "Inna Z.",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2025/12/18/its-not-just-a-postcard",
+        "title": "It's not just a postcard … Postcards raise morale and bring hope"
+      },
+      "city": "Novovolynsk",
+      "country": "Ukraine",
+      "lat": 50.7264,
+      "lng": 24.1625,
+      "circle": "Ukraine",
+      "bio": "Inna volunteers with You Are Not Alone UA in Novovolynsk, sending supplies and moral support to soldiers, war-zone residents, and children with disabilities. The postcards from abroad travel the last leg in her parcels.",
+      "pullQuote": "Every parcel, every donated item is a small victory of kindness.",
+      "quoteContext": "Soldiers are sincerely surprised by the cards, she reports — translating and rereading them to feel every word. Being useful, she says, is how you stay human in dark times.",
+      "postcards": [
+        "public/postcards/inna-1.jpg",
+        "public/postcards/inna-2.jpg"
+      ],
+      "publicAttrs": {},
+      "portrait": "public/postcards/inna-portrait.jpg"
+    },
+    {
+      "id": "Vira",
+      "name": "Vira",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Written postcards are a soldier's connection to home"
+      },
+      "city": "Kyiv",
+      "country": "Ukraine",
+      "lat": 50.4501,
+      "lng": 30.5234,
+      "circle": "Ukraine",
+      "bio": "Vira volunteers from Kyiv, surrounded by her people's ancient history, fitting aid runs around her day job. Once she reached soldiers who had lived in border forests for a year — no volunteer had found them before.",
+      "pullQuote": "Written postcards are a soldier's connection to home. It's the feeling that you are not alone, that someone far away cares about you.",
+      "quoteContext": "Defenders build whole walls of postcards and children's drawings in their dugouts, she reports — and some carry cards with them as personal charms.",
+      "postcards": [
+        "public/postcards/vira-1.jpg",
+        "public/postcards/vira-2.jpg",
+        "public/postcards/vira-3.jpg"
+      ],
+      "publicAttrs": {}
+    },
+    {
+      "id": "Larysa",
+      "name": "Larysa",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "I rejoice, when our brave Defenders are alive"
+      },
+      "city": "Nikopol district",
+      "country": "Ukraine",
+      "lat": 47.57,
+      "lng": 34.39,
+      "circle": "Ukraine",
+      "bio": "Larysa teaches preschool in the Nikopol district, across the water from the occupied nuclear plant. Since February 2022 her kindergarten's music hall has been a net-weaving workshop, its walls covered in flags and thanks from Defenders.",
+      "pullQuote": "When I first received a parcel with postcards myself, I cried. I looked through each one and felt warmth and support.",
+      "quoteContext": "Her village lost its water when the Kakhovka dam was destroyed; the shelling continues. She slips postcards into every package — greetings from home, carried in backpacks as talismans.",
+      "postcards": [
+        "public/postcards/larysa-1.jpg",
+        "public/postcards/larysa-2.jpg",
+        "public/postcards/larysa-3.jpg",
+        "public/postcards/larysa-4.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "teacher"
+        ]
+      }
+    },
+    {
+      "id": "Nataliia",
+      "name": "Nataliia",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Everything will be fine … Interview with Nataliia"
+      },
+      "city": "Smila",
+      "country": "Ukraine",
+      "lat": 49.2225,
+      "lng": 31.8879,
+      "circle": "Ukraine",
+      "bio": "Nataliia directs the Smila Art Lyceum, where 250 children study art between generator refuels and air-raid sirens. Their postcards to the front are, she says, small contributions of small hearts to a great and noble cause.",
+      "pullQuote": "When they receive drawings or postcards from our children, they always cry — not from grief or sadness, but from joy that they are remembered, supported, believed in, and awaited at home.",
+      "quoteContext": "A lyceum graduate — a mathematics teacher — is now fighting; students correspond with the unit and fundraise for equipment. The morning mantra: Everything will be fine.",
+      "postcards": [
+        "public/postcards/nataliia-1.jpg",
+        "public/postcards/nataliia-2.jpg",
+        "public/postcards/nataliia-3.jpg"
+      ],
+      "publicAttrs": {
+        "professions": [
+          "teacher"
+        ]
+      },
+      "portrait": "public/postcards/nataliia-portrait.jpg"
+    },
+    {
+      "id": "Alyona",
+      "name": "Alyona",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/2026/06/22/alyona-carries-on-irenas-legacy",
+        "title": "Alyona carries on Irena's legacy"
+      },
+      "city": "Kyiv",
+      "country": "Ukraine",
+      "lat": 50.4501,
+      "lng": 30.5234,
+      "circle": "Ukraine",
+      "bio": "Alyona lives her outwardly ordinary Kyiv life — work, friends, theatre, reading — under the constant arithmetic of sirens. When her friend Irena died, she took up her legacy: collecting stamps for the Bone Cancer Research Trust.",
+      "pullQuote": "This is a life lived in constant anticipation, in a constant state of readiness.",
+      "quoteContext": "Her friend Irena collected postage stamps for cancer research until her passing in summer 2025. Alyona carries the project forward — kindness continuing through war and grief alike.",
+      "postcards": [
+        "public/postcards/alyona-1.jpg",
+        "public/postcards/alyona-2.jpg"
+      ],
+      "publicAttrs": {
+        "hobbies": [
+          "stamp collecting",
+          "reading",
+          "theatre"
+        ]
+      }
+    },
+    {
+      "id": "Tetiana",
+      "name": "Tetiana",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Goodness and Humanity Must Prevail – Tetiana Interview"
+      },
+      "city": "Ivano-Frankivsk region",
+      "country": "Ukraine",
+      "lat": 48.9226,
+      "lng": 24.7111,
+      "circle": "Ukraine",
+      "bio": "Tetiana works in dermatology-cosmetology in Ivano-Frankivsk region, in a close-knit community that grew closer under war. Family hikes in the mountains were their little tradition — she's climbed Hoverla, Ukraine's highest peak, with her father.",
+      "pullQuote": "Moral support is no less valuable – words of solidarity, postcards, and public statements. All this together helps Ukraine endure and move closer to victory.",
+      "quoteContext": "She no longer makes plans — the war took that. But she believes Ukraine's cultural self-identity will emerge stronger, its price understood by all who paid it.",
+      "postcards": [
+        "public/postcards/tetiana-1.jpg",
+        "public/postcards/tetiana-2.jpg",
+        "public/postcards/tetiana-3.jpg"
+      ],
+      "publicAttrs": {
+        "hobbies": [
+          "hiking"
+        ]
+      },
+      "portrait": "public/postcards/tetiana-portrait.jpg"
+    },
+    {
+      "id": "Polly",
+      "name": "Polly",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "This is my reality"
+      },
+      "city": "Odesa",
+      "country": "Ukraine",
+      "lat": 46.4825,
+      "lng": 30.7233,
+      "circle": "Ukraine",
+      "bio": "Polly writes from Odesa at five in the morning, between air raids — sheltering underground with her mother, her cat Mura and dog Basya. Jan's Postcard Polina, painted an ocean away, was named in her honour.",
+      "pullQuote": "I wanted to take a photo in our realities and photograph it in the parking garage.",
+      "quoteContext": "She photographs the cards she receives \"in our realities\" — a parking-garage shelter at 5am. This is her reality; the cards are the love that reaches it.",
+      "postcards": [
+        "public/postcards/polly-1.jpg",
+        "public/postcards/polly-2.jpg",
+        "public/postcards/polly-3.jpg"
+      ],
+      "publicAttrs": {
+        "pets": [
+          "cat",
+          "dog"
+        ]
+      },
+      "portrait": "public/postcards/polly-portrait.jpg"
+    },
+    {
+      "id": "Hanna",
+      "name": "Hanna",
+      "media": {
+        "type": "article",
+        "url": "https://postcardstothefrontcanada.com/blog-archives",
+        "title": "Living in an unnormal situation – windows to the Russian world"
+      },
+      "city": "Kharkiv",
+      "country": "Ukraine",
+      "lat": 49.9935,
+      "lng": 36.2304,
+      "circle": "Ukraine",
+      "bio": "Hanna looks out from her Kharkiv flat at what a 500-tonne bomb left of the neighbourhood — the pond, the ducks, the urban wood all gone. She isn't looking for pity; she asks only that we not forget Ukraine.",
+      "pullQuote": "The window to Russian world — and no one asked for it.",
+      "quoteContext": "Happy mail helps keep her sane between the strikes on Ukraine's hardest-hit big city. When freedom comes, she hopes mostly to find calm — in her life, in herself.",
+      "postcards": [],
+      "publicAttrs": {}
+    }
+  ]
+}
